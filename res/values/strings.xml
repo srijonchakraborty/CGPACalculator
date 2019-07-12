@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CGPA Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Help">This is a very simple CGPA Calculator.To calculate your GPA touch the “Calculate GPA” button on menu frame.Then set the required values in the in the text fields and press calculate and you will get answer. To calculate CGPA  touch the “Calculate CGPA” button on menu frame and follow the same way as like as calculate GPA. Another thing is that you can Add or Remove subjects and semesters in both different layouts as your wish.</string>
+
+</resources>

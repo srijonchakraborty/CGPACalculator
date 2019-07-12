@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:text="CGPA CALCULATOR"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo" />
+<!-- 
+    <ImageView
+        android:id="@+id/help_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gpa"
+        android:src="@drawable/help" />
+
+    <ImageView
+        android:id="@+id/exit"
+        android:layout_width="fill_parent"
+        android:layout_height="78dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/help_btn"
+        android:src="@drawable/exit" />
+
+    <ImageView
+        android:id="@+id/cgpa"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:src="@drawable/calccgpa"
+        android:paddingRight="5dp" />
+-->
+<!-- android:paddingLeft="16dp" this below -->
+<!--    <ImageView
+        android:id="@+id/gpa"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cgpa"
+        android:src="@drawable/calcgpa"
+         /> -->
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="340dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="14dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+           <ImageView
+        android:id="@+id/cgpa"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+       
+        android:src="@drawable/calccgpa"
+        android:paddingRight="5dp" />
+
+<!-- android:paddingLeft="16dp" this below -->
+    <ImageView
+        android:id="@+id/gpa"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cgpa"
+        android:src="@drawable/calcgpa"
+       /> 
+         <ImageView
+        android:id="@+id/help_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gpa"
+        android:src="@drawable/help" />
+     
+     <ImageView
+        android:id="@+id/help_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gpa"
+        android:src="@drawable/help" />
+    
+    <ImageView
+        android:id="@+id/exit"
+        android:layout_width="fill_parent"
+        android:layout_height="78dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/help_btn"
+        android:src="@drawable/exit" />
+     
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

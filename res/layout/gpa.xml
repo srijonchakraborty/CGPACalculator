@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <ImageView
+        android:id="@+id/back_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addsub"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/addsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/addsubject" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="290dp"
+        android:layout_height="320dp"
+        android:layout_below="@+id/calculate"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/gpa_tab"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:text="Subjects "
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:text="GPA "
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:text="Credit "
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:text="Cancel "
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_sub"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/calculate" />
+
+</RelativeLayout>
